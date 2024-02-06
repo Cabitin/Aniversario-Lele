@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Play It Yourself</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <style type="text/css">
+   @font-face {
+   font-family: Lato;
+   src: url(fonts/Fistalle.ttf);
+}
+   @font-face {
+   font-family: Isso;
+   src: url(fonts/Calistoga-Regular.ttf);
+}
+ * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    .image-container {
+      margin: 0 auto; /* center the image containers */
+      width: 80%;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22); /* material box shadow */
+      margin-bottom: 20px;
+      transition-duration: 1s;
+    }
+    .image-container:hover {
+      width: 90%;
+      box-shadow: 0 18px 36px rgba(0,0,0,0.30), 0 14px 11px rgba(0,0,0,0.22);
+    }
+    /* make the images responsive */
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .image-description {
+      padding: 0 15px 15px 15px;
+      text-align: center;
+    }
+    
+    /* lightbox stylesheet */
+    .lightbox {
+      display: table; /* helps us center the lightbox-content */
+      transition-duration: 1s; /* duration of the fade in effect */
+    
+      /* make the lightbox occupy the entire page */
+      position: fixed;
+      top: -100%; /* hide the lightbox above the top edge */
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7); /* black with 0.7 opacity */
+    }
+    .lightbox:target {
+      top: 0; /* make the lightbox cover the entire page */
+    }
+    .lightbox-content {
+      display: table-cell;
+      vertical-align: middle; /* vertically center */
+      text-align: center; /* horizontally center */
+    }
+    .close {
+      /* position the CLOSE button to the top-right corner */
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    
+      /* style the close button */
+      font-size: 20px;
+      font-weight: 300;
+      text-decoration: none;
+      color: white;
+    }
+    
+    /* make the image responsive */
+    .lightbox img {
+      max-width: 100%;
+      height: auto;
+    }
+    h1{
+    font-family: Isso;
+    color: white;
+    margin:5;
+    border:3px solid black;
+    padding:20px;
+}
+    h3{
+    font-family: Lato;
+}
+    footer{
+    font-family:Lato;
+    text-align:center;
+}
+    p{
+    font-family: Lato;
+}
+    a{
+    font-family: Isso;
+}
+     body{
+     background-color: rgb(179,177,216);
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"> Feliz aniversário <3</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="Menu2.html"> Menu</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Galeria.html"> Galeria <span class="sr-only">(current)</span> </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Textinho.html"> PARABÉNS UHUUUUUUU</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <hr style="height:4px;" color="black"/>
+  <h1 style="text-align: center"> Galeria </h1>
+  <hr style="height:4px;" color="black"/>
+  <h3 style="text-align: center"> Um pouco da garota que me inspira toda vez que ponho meus sentimentos no papel <3 </h3>
+  <hr style="width:50%;" color="rgb(44,46,56);"/>
+  <div class="gallery">
+  
+    <div class="image-container" id="container1">
+      <a href="#image1"><img src="images/Solzinho.jpg" /></a>
+      <p class="image-description"> Te peço.
+Te peço para não ir embora, para que não me faça sair de seu abraço que tanto me é lar, que não me deixe sair de seu beijo, de seu toque e de seu cheiro que me adoça;
+Te peço para que me mostre coisas que ainda não sei, que me mostre cada detalhe de seu ser até mesmo nas noites tempestuosas, que me mostre seu ego;
+Te peço que me toque e não pare, que me faça ser sua e que você seja sempre minha, que me faça ter ainda mais certeza do porquê seu corpo me deixa como brasa;
+Te peço para que me mostre o que é esse amor tão falado nas obras de arte, o que é essa tal melancolia que vem junto a saudade, o que é a vontade efervescente de te querer e não poder te ter; 
+Te peço: me ame, me toque, me tenha por completo, quero sentir sua paixão queimar em meu corpo, quero que faça meu coração acelerar e meus lábios ansiarem por seu beijo, quero que não tenha dúvidas do meu querer por você;
+Te peço: mate essa saudade que tanto invade meu querer.</p>
+    </div>
+  
+    <div class="image-container" id="container2">
+      <a href="#image2"><img src="images/Fotoyubo.jpg" /></a>
+      <p class="image-description">  A arte e seu nome
+
+Caso me chegue a pergunta sobre o que é o amor, eu tenho a resposta, ou melhor, eu tenho o nome.
+
+Letícia, a garota que me fez entender que até nos piores dias e nas lágrimas mais sinceras, amar vale a pena. 
+
+Ela, com seus 1,62 é maior que muita gente, tem pensamentos que vão além do comum, além do que você esperaria de uma garota de 17 anos. Ela é tão maior que ao seu lado me sinto pequena, pois na mesma medida em que seus pensamentos são grandes, seu amor por mim consegue ser ainda maior. 
+
+Ela ama e não tem medo disso, já cansou de se esconder e cansou de fingir ser quem não é, ela ama usar roupas diferentes e se maquiar, ama ver séries criminais mas também ama ficar de chamego e me ver com cara de boba, ela ama ler, ama o sol, rir de coisas com humor duvidoso e o Tom.  
+
+Ela sempre se esforça pra expressar seu amor, seja por outras pessoas ou por ela mesma, ela constantemente vai tentar lembrar ela mesma de que é maravilhosa, e bem, caso não consiga de forma tão fácil, eu mimo e bajulo ela até ela voltar a ter alguma noção de quão perfeita ela é, até ela lembrar o porquê de ser tão amada.
+
+Pra mim, não existe maior representação do amor do que a Letícia, ela me dá vontade de mostrar que o mundo não precisa ser só cinza e monótono, que existem pessoas que não são cruéis, pessoas que assim como ela, sabem amar e sabem ser amantes do amor. Ela me faz querer a amar até nossa existência se dissipar pelos céus, mas acho que mesmo se ela não existisse, quando eu pensasse em amor, pensaria nela.
+
+A amar por esses 309 dias me fez entender porquê há tantos artistas que almejam o amor, me fez entender porquê suas obras são sempre tão apaixonantes. Acho que para eles, assim como para mim, amar não é um ato, é um nome.
+</p>
+    </div>
+  
+    <div class="image-container" id="container3">
+      <a href="#image3"><img src="images/Olhos.jpg" /></a>
+      <p class="image-description"> Saudade; e por falar em saudade, me pergunto onde andam seus olhos castanhos que tanto aceleram meu coração;
+
+Onde andam seus abraços acolhedores que me fazem lar?
+ Onde andam seus toques quentes em minha pele? Que conseguem me acalmar entre choros copiosos e que sempre me dopam quando cedo alguns segundos em seus braços;
+
+Por falar em saudade, onde andam suas risadas altas que nunca falham em me tirar os mais sinceros e exagerados sorrisos? 
+Onde anda sua voz doce que tem tanto poder sobre mim?
+
+Por falar em saudade, onde anda seu ardente beijo que tenho almejado com tanta urgência nas últimas semanas? Onde anda o agradável encontro dos seus lábios nos meus? 
+
+E por falar em saudade, onde anda você?
+
+Acho que não haveria título melhor para esse capítulo, nada define melhor o que eu tanto senti esse último mês, mesmo te vendo toda semana, mesmo fazendo ligações todos os dias, mesmo nossas conversas durando horas, nada é capaz de definir melhor o que eu sinto em mim agora: Saudade;
+
+Saudade do seu amor, de me sentir tão amada por você que não consiga conter as lágrimas, de sentir seus braços me envolverem e sentir que estou em casa, de poder sentir sua boca na minha e saber que sou sua.
+
+Nada definiria melhor do que aquilo que me dói no peito quando sinto, que já me fez chorar por não querer sentir isso nunca mais,
+
+nada definiria melhor do que aquilo que não paramos de dizer baixinho uma à outra toda vez que a sensação de vazio bate;
+
+Saudade. </p>
+    </div>
+  
+    <div class="image-container" id="container4">
+      <a href="#image4"><img src="images/Adidas.jpg" /></a>
+      <p class="image-description"> Mais uma vez;
+Mais uma vez eu me vejo sorrir ao ouvir seu nome, tentando encontrar em todo lugar seu cheiro que me entorpece, mais uma vez sinto minha pele arrepiar enquanto lembro de seus toques, que são tão quentes e tão bons de sentir.
+Mais uma vez que me pego pensando no quanto você faz falta aqui, no quanto tudo seria mais interessante com você do lado, e mais uma vez penso que se você estivesse comigo, ao invés de eu estar escrevendo para você em uma madrugada chuvosa, estaria em seus braços me sentindo sua.
+Mais uma vez sinto a incontrolável vontade de sentir sua pele na minha mais vezes, e mais uma e mais uma...
+Talvez eu pense em você vezes demais, penso muito em te sentir, penso muito em te olhar e ouvir sua voz que tanto mexe comigo, e como agora, às vezes até penso sobre pensar muito em você.
+Sei que tudo isso pode parecer exagerado, pode parecer que estou apenas enlouquecendo de amor e que estou pensando em você tantas vezes que é como se já fosse rotina eu acordar sentindo sua falta, como se já fosse totalmente comum você ser a primeira coisa que penso quando abro meus olhos, tudo soa tão exagerado, mas certamente sei que é isso que sinto, que quero que meu amor por você seja exagerado às vezes, que meus textos sejam muito repetitivos e que os parágrafos sejam muito longos, porque no final, sempre vou querer que "mais uma vez", eu te faça sentir amada.
+ </p>
+    </div>
+  <hr style="width:50%;" color="rgb(44,46,56);"/>
+  </div>
+  </div>
+<footer class="footer mt-auto py-3 bg-dark">
+    <div3 class="container">
+      <span class="text-muted"> Site feito para que você não esqueça o quanto merece coisas incríveis <3 </span>
+    </div3>
+  </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
